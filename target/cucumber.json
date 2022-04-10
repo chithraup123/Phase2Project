@@ -1,0 +1,556 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 699061600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I\u0027m on login page of the application",
+            "match": {
+              "location": "LoginSteps.i_m_on_login_page_of_the_pplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-10T07:55:44.324Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3795122500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validate successful login of the application",
+        "description": "",
+        "id": "login-feature-of-the-https://www.saucedemo.com/;validate-successful-login-of-the-application;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 296384200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1160417100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.i_enter_username_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1077306200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.i_enter_password_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 952537700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginSteps.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1117227000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be landed on home page",
+            "match": {
+              "location": "LoginSteps.i_should_be_landed_on_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 978244100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I\u0027m on login page of the application",
+            "match": {
+              "location": "LoginSteps.i_m_on_login_page_of_the_pplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-10T07:55:53.531Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1764769300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Validate login failure of the application",
+        "description": "",
+        "id": "login-feature-of-the-https://www.saucedemo.com/;validate-login-failure-of-the-application;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 511519500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 345742000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter username \"locked_out_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"locked_out_user\"",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.i_enter_username_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 257282100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter password \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.i_enter_password_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 293413900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginSteps.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138740000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should get the error message as \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 34
+                }
+              ],
+              "location": "LoginSteps.i_should_get_the_error_message_as(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 855823200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I\u0027m on login page of the application",
+            "match": {
+              "location": "LoginSteps.i_m_on_login_page_of_the_pplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-10T07:55:57.844Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1744079000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Validate login failure of the application",
+        "description": "",
+        "id": "login-feature-of-the-https://www.saucedemo.com/;validate-login-failure-of-the-application;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 688941100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 326861900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.i_enter_username_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 233551500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter password \"\u003cpassword\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cpassword\u003e\"",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.i_enter_password_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194956200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginSteps.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112960800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should get the error message as \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 34
+                }
+              ],
+              "location": "LoginSteps.i_should_get_the_error_message_as(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login feature of the https://www.saucedemo.com/",
+    "description": "",
+    "id": "login-feature-of-the-https://www.saucedemo.com/",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": [
+      {
+        "name": "@Sanity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 958125500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I\u0027m on login page of the application",
+            "match": {
+              "location": "LoginSteps.i_m_on_login_page_of_the_pplication()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-10T07:56:02.014Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2086878700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Validate successful login of the application",
+        "description": "",
+        "id": "compare-the-price-of-the-of-the-product;validate-successful-login-of-the-application",
+        "after": [
+          {
+            "result": {
+              "duration": 321318600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 402028500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.i_enter_username_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 399154700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.i_enter_password_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 410761500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginSteps.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1057364900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be landed on home page",
+            "match": {
+              "location": "LoginSteps.i_should_be_landed_on_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86311200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I compare the prices of following products",
+            "match": {
+              "location": "ProductSteps.i_compare_the_prices_of_following_products(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Backpack",
+                  "$29.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bike Light",
+                  "$9.99"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Compare the price of the of the Product",
+    "description": "",
+    "id": "compare-the-price-of-the-of-the-product",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/product.feature",
+    "tags": [
+      {
+        "name": "@Sanity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
